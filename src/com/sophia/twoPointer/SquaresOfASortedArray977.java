@@ -23,6 +23,7 @@ public class SquaresOfASortedArray977 {
             int left = 0;
             int right = nums.length - 1;
             int[] result = new int[nums.length];
+            //pointer->index for the result, from large to small
             int pointer = nums.length - 1;
 
             while (left < right) {
