@@ -26,3 +26,36 @@ public class KokoEating875 {
     }
     }
 
+//class Solution {
+//    public int minEatingSpeed(int[] piles, int h) {
+//        int left = 1;
+//        int right = max(piles);
+//        while(left+1<right){
+//            int mid = left +(right-left)/2;
+//            if(isValid(mid,piles,h)){
+//                right = mid;
+//            }else{
+//                left = mid;
+//            }
+//        }
+//        if(isValid(left,piles,h)){
+//            return left;
+//        }
+//        return right;
+//    }
+//    private boolean isValid(int k ,int[]piles,int h){
+//        int hNeeded = 0;
+//        for(int p:piles){
+//            hNeeded += p/k + (p % k == 0 ?0:1);
+//        }
+//        return hNeeded <=h;
+//    }
+//    private int max(int[] arr){
+//        int ans = Integer.MIN_VALUE;
+//        for(int a : arr){
+//            ans = Math.max(a,ans);
+//
+//        }
+//        return ans;
+//    }
+//}
